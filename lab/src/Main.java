@@ -18,7 +18,12 @@ public class Main {
         group.removeDean("АБВ");
         System.out.println(group);
 
-        System.out.println("Сортировка по названию");
+        Dean firstDeanery = group.getDeanElem(0);
+        if (firstDeanery != null) {
+            System.out.println(firstDeanery);
+        }
+
+        System.out.println("\nСортировка по названию");
         group.sortDean();
         System.out.println(group);
     }

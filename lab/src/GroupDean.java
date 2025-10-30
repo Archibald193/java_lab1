@@ -61,6 +61,15 @@ public class GroupDean {
         }
         this.deaneries = newArray;
     }
+
+    public Dean getDeanElem(int el) {
+        if (el >= 0 && el < this.deaneries.length) {
+            return this.deaneries[el];
+        } else {
+            System.out.println("В массиве всего " + this.deaneries.length + " элементов");
+            return null;
+        }
+    }
     
     public void sortDean() {
         Arrays.sort(this.deaneries);
